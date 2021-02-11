@@ -25,7 +25,7 @@ class MeetingMinutes(models.Model):
 
     # methods
     def __str__(self):
-        return self.meetingid # may need to remove this or add additional field
+        return self.minutestext # may need to remove this or add additional field
 
     # sub-classes
     class Meta:

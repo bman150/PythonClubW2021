@@ -22,11 +22,11 @@ def meetingdetails(request, id):
     locations=meet.location
     agendas=meet.agenda
     context={
-        'meet' : meet
-        'name' : name
-        'date' : date
-        'time' : time
-        'locations' : locations
-        'agendas' : agendas
+        'meet' : meet,
+        'name' : name,
+        'date' : date,
+        'time' : time,
+        'locations' : locations,
+        'agendas' : agendas,
     }
     return render(request, 'club/meetingdetails.html', context=context)
