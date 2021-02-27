@@ -13,3 +13,9 @@ class ResourceForm(forms.ModelForm):
     class Meta:
         model=Resource
         fields='__all__'
+
+class LoginForm(forms.ModelForm):
+    #sub-classes
+    class Meta:
+        model=login
+        fields='__all__'
